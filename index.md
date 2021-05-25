@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
 
 <head>
@@ -16,11 +16,12 @@
         <p class="text-whitesmoke">Sign In</p>
         <div class="container-content">
             <script>
-            function UserPage()
-            {
+            function UserPage(event)
+            { event.preventDefault();
+
                 window.location.href='./user-list.html'
             }</script>
-            <form class="margin-t" onsubmit="UserPage()" action='user-list.html'  method='POST'>
+            <form class="margin-t" onsubmit="UserPage()" method='POST'>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Username" required="">
                 </div>
